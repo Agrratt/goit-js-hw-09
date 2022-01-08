@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(130, 129, 127);
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  margin-top: 10px;
+  margin-left: 15px;
+  line-height: 1;
+}
+
+.value {
+    font-size: 40px;
+}
+
+.interface-timer {
+  width: 600px;
+  height: 300px;
+  border-radius: 3px;
+  background-color: rgb(223, 152, 179);
+  margin: 0 auto;
+  margin-top: 200px;
+  transition: background-color 250ms linear;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.button {
+  margin-left: 10px;
+  background-color: rgb(130, 133, 132);
+  color: rgb(240, 248, 255);
+  border: 1px solid;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button:hover {
+    color: cadetblue;
+}
+
+.disabled {
+  background-color: rgb(201, 209, 204);
+  color: #ffffff;
+  border: none;
+  cursor: none;
+  pointer-events: none;
+}
