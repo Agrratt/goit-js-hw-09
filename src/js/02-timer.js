@@ -9,7 +9,7 @@ const refs = {
     hours: document.querySelector('span[data-hours]'),
     minutes: document.querySelector('span[data-minutes]'),
     seconds: document.querySelector('span[data-seconds]'),
-    timerRef:document.querySelector('.timer'),
+    timer:document.querySelector('.timer'),
 };
 
 refs.btnStart.disabled = true;
@@ -35,6 +35,7 @@ const options = {
         useDate = selectedDates[0];
       };
   },
+  
 };
 console.log(options);
 
@@ -88,7 +89,7 @@ class Timer {
       
        if (deltaTime <= 0) { 
         this.stop();
-        refs.timerRef.innerHTML = 'Time is over!';
+        refs.timer.innerHTML = 'Time is over!';
       };
     }, 1000);
 
